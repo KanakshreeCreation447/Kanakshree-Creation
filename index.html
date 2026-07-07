@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,19 +8,19 @@
 <style>
 body{
 margin:0;
-font-family:Arial;
+font-family:Arial,sans-serif;
 background:#0b0b0b;
 color:white;
 text-align:center;
 }
 
 header{
-padding:25px;
 background:#000;
+padding:25px;
 border-bottom:2px solid #d4af37;
 }
 
-header img{
+.logo{
 width:100px;
 }
 
@@ -27,35 +28,47 @@ h1,h2{
 color:#d4af37;
 }
 
-.hero img{
+.hero{
+padding:20px;
+}
+
+.banner{
 width:90%;
 max-width:600px;
+height:250px;
+object-fit:cover;
 border-radius:15px;
-margin:20px;
+border:1px solid #d4af37;
 }
 
 .card{
-width:90%;
+width:85%;
 max-width:600px;
 margin:20px auto;
 padding:20px;
 border:1px solid #d4af37;
 border-radius:15px;
+background:#111;
 }
 
-.gallery{
+.products{
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:15px;
 padding:20px;
 }
 
-.gallery img{
+.product{
+border:1px solid #d4af37;
+border-radius:15px;
+padding:15px;
+}
+
+.product img{
 width:100%;
 height:150px;
+border-radius:10px;
 object-fit:cover;
-border-radius:15px;
-border:1px solid #d4af37;
 }
 
 button{
@@ -63,14 +76,21 @@ background:#d4af37;
 color:black;
 padding:12px 25px;
 border:0;
-border-radius:20px;
+border-radius:25px;
 font-size:16px;
+font-weight:bold;
 }
 
 footer{
-padding:20px;
 background:#000;
+padding:20px;
 color:#aaa;
+}
+
+@media(max-width:600px){
+.products{
+grid-template-columns:1fr;
+}
 }
 </style>
 
@@ -79,37 +99,76 @@ color:#aaa;
 <body>
 
 <header>
-<img src="logo.png">
+<img class="logo" src="logo.png">
 <h1>Kankshree Creation</h1>
-<p>Premium Collection</p>
+<p>Premium Fashion Collection</p>
 </header>
 
+
 <section class="hero">
-<img src="banner.jpg">
+<img class="banner" src="banner.jpg">
 </section>
 
+
 <div class="card">
-<h2>Our Products</h2>
-<p>Latest designs and premium quality products.</p>
+<h2>Welcome</h2>
+<p>
+Discover premium quality fashion designs at Kankshree Creation.
+</p>
 </div>
 
-<h2>Gallery</h2>
 
-<div class="gallery">
-<img src="IMG-20260702-WA0005.jpg">
-<img src="<img src="IMG-20260702-WA0003.jpg">
-<img src="product4.jpg">
+<h2>Our Categories</h2>
+
+<div class="card">
+<p>👗 Ladies Collection</p>
+<p>🧒 Kids Collection</p>
+<p>✨ New Arrivals</p>
+<p>💎 Premium Collection</p>
 </div>
 
-<br>
 
-<a href="https://www.instagram.com/kankshreecreation477">
-<button>Contact Us</button>
+<h2>Products</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="product1.jpg">
+<h3>New Design</h3>
+<p>Premium Collection</p>
+</div>
+
+<div class="product">
+<img src="product2.jpg">
+<h3>Latest Style</h3>
+<p>Order Now</p>
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>Order Now</h2>
+
+<a href="https://wa.me/919257458129">
+<button>WhatsApp Order</button>
 </a>
 
+</div>
+
+
+<div class="card">
+<h2>Contact</h2>
+<p>Kankshree Creation</p>
+<p>WhatsApp: 9257458129</p>
+</div>
+
+
 <footer>
-<p>© Kankshree Creation</p>
+<p>© 2026 Kankshree Creation</p>
 </footer>
+
 
 </body>
 </html>
