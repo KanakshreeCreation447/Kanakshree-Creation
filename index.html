@@ -1,14 +1,14 @@
 
 <!DOCTYPE html>
 <html>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kankshree Creation</title>
+
+<title>Kankshree Creation | Premium Fashion</title>
 
 <style>
-*{
-box-sizing:border-box;
-}
+*{box-sizing:border-box;}
 
 body{
 margin:0;
@@ -18,9 +18,9 @@ color:white;
 }
 
 header{
-background:#000;
 text-align:center;
 padding:30px 15px;
+background:#000;
 border-bottom:2px solid #d4af37;
 }
 
@@ -28,36 +28,36 @@ border-bottom:2px solid #d4af37;
 font-size:38px;
 font-weight:bold;
 color:#d4af37;
-letter-spacing:1px;
 }
 
 header p{
-font-size:18px;
 color:#ddd;
 }
 
 
-.banner{
-padding:60px 20px;
+.hero{
+padding:80px 20px;
 text-align:center;
 background:
-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9));
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.9)),
+url("banner.jpg");
+background-size:cover;
+background-position:center;
 }
 
-.banner h1{
-font-size:45px;
+.hero h1{
+font-size:48px;
 color:#d4af37;
-margin:10px;
 }
 
-.banner h2{
+.hero h2{
 font-size:30px;
 }
 
-.banner p{
+.hero p{
 font-size:20px;
-color:#ddd;
 }
+
 
 .btn{
 display:inline-block;
@@ -65,8 +65,8 @@ margin:10px;
 padding:15px 30px;
 background:#d4af37;
 color:#000;
+border-radius:30px;
 font-weight:bold;
-border-radius:40px;
 text-decoration:none;
 }
 
@@ -75,6 +75,7 @@ text-decoration:none;
 padding:30px 15px;
 }
 
+
 .card{
 background:#111;
 border:1px solid #d4af37;
@@ -82,32 +83,28 @@ border-radius:20px;
 padding:25px;
 margin:20px 0;
 text-align:center;
-box-shadow:0 0 15px #d4af3740;
 }
+
 
 .card h2{
 color:#d4af37;
-font-size:28px;
 }
 
 
 .gallery{
 display:flex;
 gap:15px;
-justify-content:center;
 flex-wrap:wrap;
+justify-content:center;
 }
 
-.box{
+
+.gallery img{
 width:150px;
 height:150px;
-background:#222;
-border:1px dashed #d4af37;
+object-fit:cover;
 border-radius:15px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:#d4af37;
+border:2px solid #d4af37;
 }
 
 
@@ -118,23 +115,30 @@ text-align:center;
 border-top:2px solid #d4af37;
 }
 
-.footer a{
+
+a{
 color:#d4af37;
-text-decoration:none;
 }
 
 </style>
+
 </head>
 
 <body>
 
+
 <header>
-<div class="logo">KANKSHREE CREATION</div>
+
+<div class="logo">
+KANKSHREE CREATION
+</div>
+
 <p>✨ Ladies Wear | Kids Wear ✨</p>
+
 </header>
 
 
-<div class="banner">
+<section class="hero">
 
 <h1>Premium Fashion</h1>
 
@@ -142,37 +146,59 @@ text-decoration:none;
 
 <p>Designer Ladies & Kids Wear At Best Price</p>
 
+
 <a class="btn" href="https://wa.me/919257458129">
-💬 WhatsApp Order
+WhatsApp Order
 </a>
+
 
 <a class="btn" href="tel:9257458129">
-📞 Call Now
+Call Now
 </a>
 
-</div>
 
+</section>
 
 
 <div class="section">
 
 
 <div class="card">
+
 <h2>👗 Ladies Wear</h2>
-<p>Trendy Dresses • New Collection • Premium Quality</p>
+
+<p>Designer Dresses • New Trends • Premium Quality</p>
+
 </div>
 
 
 <div class="card">
+
 <h2>🧒 Kids Wear</h2>
-<p>Stylish & Comfortable Fashion For Your Kids</p>
-</div>
 
+<p>Stylish & Comfortable Fashion For Kids</p>
+
+</div>
 
 
 <div class="card">
 
-<h2>🛍️ Visit Our Store</h2>
+<h2>📸 New Collection</h2>
+
+<div class="gallery">
+
+<img src="dress1.jpg">
+<img src="dress2.jpg">
+<img src="dress3.jpg">
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>📍 Visit Store</h2>
 
 <p>
 No.477 Jawaharlal Nehru Road,<br>
@@ -180,12 +206,16 @@ No.477 Jawaharlal Nehru Road,<br>
 R.R Nagar Bengaluru - 560098
 </p>
 
+<a href="https://maps.google.com">
+Open Google Map
+</a>
+
 </div>
 
 
 <div class="card">
 
-<h2>📸 Instagram</h2>
+<h2>Instagram</h2>
 
 <p>@kankshreecreation477</p>
 
@@ -197,9 +227,8 @@ R.R Nagar Bengaluru - 560098
 
 <div class="footer">
 
-<p>© 2026 Kankshree Creation</p>
-
-<p>Luxury Fashion Store</p>
+© 2026 Kankshree Creation<br>
+Luxury Fashion Store
 
 </div>
 
